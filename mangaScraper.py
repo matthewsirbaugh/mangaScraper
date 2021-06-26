@@ -59,7 +59,6 @@ for images in imgList: #generates list of Image objects
     pdfList.append(thisImage)
 
 newList = pdfList[1:] #ensures the last page is not saved first due to implementation of PIL
-#print(pdfList[0])
 pdfList[0].save(directoryName + '.pdf',save_all=True, append_images=newList) #saves images as single pdf
 
 try:
